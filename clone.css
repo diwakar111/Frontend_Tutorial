@@ -1,0 +1,247 @@
+/* Reset default spacing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+
+/* Style header */
+header {
+  background: #333;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav a {
+  color: white;
+  margin-left: 1rem;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+header nav a:hover{
+    background-color: #f9f9f9;
+    cursor: pointer;
+    font-size: 2em;
+    color: black;
+    border-radius: 10px;
+}
+
+input{
+    padding: 10px;
+    border-radius: 8px; 
+}
+
+input:hover{
+    size: 40px;
+    background-color: chartreuse;
+}
+
+
+.btn button{
+    padding: 8px;
+    border-radius: 10px;
+    margin-right: 30px;
+    width: 100px;
+    
+}
+
+.btn button:hover{
+    background-color: aqua;
+}
+
+
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+/* Main layout using flexbox */
+main {
+  display: flex;
+  margin: 1rem;
+  flex: 1;
+  margin: 0%;
+}
+
+/* Sidebar (left) */
+.sidebar {
+  flex: 1;
+  background: #f0f0f0;
+  padding: 1rem;
+  height: 100vh;
+  position: sticky;
+  top: 20px;
+  overflow-y: scroll;     
+}
+
+
+li{
+    list-style-type: none;
+    padding: 10px;
+    background-color: #333;
+    margin-top: 10px;
+    width: 100%;
+    margin-left: 0;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+}
+
+
+li:hover{
+    background-color: rgb(117, 187, 237);
+}
+
+/* Main content (center) */
+.content {
+  flex: 3;
+  padding: 1rem;
+  background: #fff;
+  margin-top: 0%;
+}
+
+.content p{
+    text-align: justify;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.content p::first-letter{
+    font-size: larger;
+    color: rgb(218, 57, 162);
+}
+
+
+.content p::selection{
+    background-color: darkorange;
+}
+
+.quote{
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: fit-content;
+    background-color: darkkhaki;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 25px 1px hsl(0, 0%, 50%);
+    
+}
+pre{
+    font-size: larger;
+}
+
+.content>h1{
+    text-align: center;
+    font-weight: 100;
+    font-size: 40px;
+    text-shadow: 2px 2px #f44d4d;
+}
+
+.content .dream p{
+   
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: fit-content;
+    background-color: darkkhaki;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 25px 1px hsl(0, 0%, 50%);
+
+}
+
+
+.subjects >h1{
+
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.subjects >p::first-letter{
+    color: darkgreen;
+    font-size: 40px;
+}
+
+.subjects ul li{
+    text-align: center;
+    background: linear-gradient(to top,rgb(228, 136, 207),rgb(227, 170, 219));
+    transition: width 2s, height 4s, background-color 4s;
+}
+
+.subjects ul li:hover{
+    font-size: 30px;
+}
+
+
+/* Ads (right sidebar) */
+.ads {
+  flex: 1;
+  background: #f9f9f9;
+  padding: 1rem;
+  /* IMportant here.  */
+  height: 100vh;
+  position: sticky;
+  top: 20px;
+  overflow-y: scroll;     
+  
+}
+
+.ads >p{
+    padding: 20px;
+    border: 2px solid rgb(34, 24, 24);
+    margin-top: 13px;
+    color: #f44d4d;
+    border-radius: 5px;
+    transition: width 2s, height 4s, background-color 4s;
+}
+
+.ads >p:hover{
+    width: 100%;
+    padding: 20px;
+    background-color: rgb(21, 123, 21);
+    font-size: larger;
+    color: white;
+}
+
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------------ */
+
+/* Footer */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+.company{
+    display: flex;
+
+}
+.div1{
+    flex: 1;
+}
+.div2{
+    flex: 1;
+}
+.div3{
+    flex: 1;
+}
+pre{
+    align-items: center;
+}
+
+
+
+
